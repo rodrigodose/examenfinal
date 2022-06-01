@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Indumentaria informal</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+     </head>
+    <body>
+      
+    
+      
+      <script>
+       
+      let edadDelUsuario = localStorage.getItem("edadDelUsuario")
+      
+      if (!edadDelUsuario) {
+        edadDelUsuario = parseInt(prompt("¿Erés mayor de edad? Indica tu edad: "));
+        localStorage.setItem("edadDelUsuario", edadDelUsuario)
+      }
+      
+      validateEdad(edadDelUsuario)
+      
+      function validateEdad(edad) {
+          if (edadDelUsuario >= 18){
+          alert("Eres mayor de edad, puedes comprar en el local");
+          document.querySelector("h1").innerText = edadDelUsuario
+        } else {
+          window.location.href = "https://www.disneyplus.com/";
+        }
+      }
+      
+      
+      </script>
+     
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Inventar nombre</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                      
+        
+
+                         <li class="nav-item"><a class="nav-link active" 
+                               href="nosotros.html">Sobre nosotros</a></li>
+                        <li class="nav-item dropdown">
+                            
+                            <a class="nav-link active dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Compras</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           
+                                <li><a class="dropdown-item" href="hombres.html">Hombres</a></li>
+                                <li><a class="dropdown-item" href="mujeres.html">Mujeres</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto/contacto.html">Contacto</a></li>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Carrito
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Indumentaria informal</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Todavía no le inventé un nombre</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://tommyargentina.vteximg.com.br/arquivos/ids/197023-500-667/MW0MW15672_0MT_1.jpg?v=637768295427930000" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <!-- Product price-->
+                                    $40.00 - $80.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                                     href="tablatalles.html">Tabla de talles</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_824306-MLA47066363567_082021-W.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+
+
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="carrito.html">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="data:image/jpeg;base64,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" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="carrito.html">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1tVRCY1SuTJBfoi4pOifZf4MWX0Eyyg5TnI-3YrqLZRgtKGDAYUEQvG93z_Dj97OVKRE&usqp=CAU" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="carrito.html">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://lamartina.vtexassets.com/arquivos/ids/195005-800-auto?v=637668883516600000&width=800&height=auto&aspect=true" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pantalon-bohemio-verano-barato-mujer-pullandbear-33-1653922479.jpg?resize=480:*" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <!-- Product price-->
+                                    $120.00 - $280.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="tablatalles.html">Tabla de talles</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://lamartina.vtexassets.com/arquivos/ids/190678-800-auto?v=637533149728130000&width=800&height=auto&aspect=true" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="carrito.html">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://statics.glamit.com.ar/media/catalog/product/cache/58/base/800x1200/9df78eab33525d08d6e5fb8d27136e95/7/6/76512_rapsodia_11114015595i_01_1.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="carrito.html">Agregar al carrito</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Derechos Reservados &copy; 2022</p></div>
+
+            <div class="container"><p class="m-0 text-center text-white"> <a href="Subpaginas/PaquetesRecomendados.pdf" class="m-0 text center text-white" download >Terminos y condiciones</a></p></div>
+
+            <div class="container"><p class="m-0 text-center text-white">Buenos Aires, San Nicolas</p></div>
+
+            <div class="container"><p class="m-0 text-center text-white">Si tenés alguna duda podés despejarla enviando un mail 
+                <a href="mailto: rodrigodose@gmail.com?subject=Questions">aquí</a><br></p></div>
+
+
+      
+         
+        </footer>
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="carrito.js"></script>
+    </body>
+</html>
